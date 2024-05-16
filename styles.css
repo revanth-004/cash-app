@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.text-container {
+  width: 400px;
+}
+.title-text {
+  font-weight: 800;
+  padding: 10px 0;
+}
+#hero-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-image: url("src/hero-lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.hero-img {
+  position: absolute;
+}
+.hero-cube {
+  height: 4vw;
+  top: 10%;
+  left: 20%;
+}
+.hero-cubes {
+  height: 14vw;
+  bottom: 10%;
+  left: 12%;
+}
+.hero-pillar {
+  width: 12vw;
+  min-width: 100px;
+  bottom: 0%;
+  right: 20%;
+}
+.hero-stairs {
+  width: 12vw;
+  top: 8%;
+  right: 14%;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.nav-item {
+  padding: 0 1rem;
+}
+.nav-brand {
+  height: 32px;
+}
+.navbar-eye {
+  height: 20px;
+}
+
+.navbar-eye-btn {
+  background-color: #000;
+  border: none;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.landing-page > .container {
+  text-align: center;
+  line-height: 0.75;
+  position: relative;
+}
+.landing-title {
+  color: #fff;
+  font-size: 10rem;
+
+  transform: skewY(5deg);
+}
+.landing-phone {
+  position: absolute;
+  height: 25vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  z-index: 1.5;
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+}
+
+#payment-page {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.payment-img {
+  position: absolute;
+}
+
+.payments-pillar {
+  height: 60vh;
+}
+.pillar-1 {
+  bottom: 10%;
+  right: -2%;
+}
+.pillar-2 {
+  bottom: -8%;
+  right: 20%;
+}
+.pillar-3 {
+  bottom: -10%;
+  left: -35%;
+}
+
+.payments-pillar-large {
+  height: 45vh;
+  bottom: 10%;
+  right: 39%;
+}
+.payments-pillar-medium {
+  height: 30vh;
+}
+.pillar-m-1 {
+  bottom: 5%;
+  left: 20%;
+}
+.pillar-m-2 {
+  bottom: 10%;
+  left: 40%;
+}
+.pillar-m-3 {
+  bottom: 25%;
+  right: 15%;
+}
+.pillar-m-4 {
+  bottom: -10%;
+  right: 40%;
+}
+.payments-pillar-small {
+  height: 15vh;
+  bottom: 10%;
+  left: 26%;
+}
+.payments-phone {
+  height: 55vh;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.payment-text {
+  margin: 120px;
+}
+.payment-text > h1 {
+  color: #00d54b;
+}
+
+#banking-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00d54b;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.banking-img {
+  position: absolute;
+}
+
+.banking-phone {
+  height: 55vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.banking-hole-1 {
+  height: 20vh;
+  top: 0;
+  left: -2%;
+}
+.banking-hole-2 {
+  height: 20vh;
+  bottom: -15%;
+  right: 20%;
+}
+.banking-pillar {
+  height: 23vh;
+  top: 15%;
+  left: 5%;
+}
+.banking-track-1 {
+  height: 18vh;
+  top: 20%;
+  left: 32%;
+}
+.banking-track-2 {
+  height: 18vh;
+  top: 5%;
+  right: 20%;
+}
+.banking-ramp-1 {
+  height: 22vh;
+  top: 30%;
+  right: 25%;
+}
+.banking-ramp-2 {
+  height: 22vh;
+  bottom: 10%;
+  left: 15%;
+}
+.banking-stairs-1 {
+  height: 25vh;
+  top: 35%;
+  right: 4%;
+}
+.banking-stairs-2 {
+  height: 25vh;
+  top: 50%;
+  left: 4%;
+}
+.banking-cubes {
+  height: 20vh;
+  bottom: 15%;
+  right: 15%;
+}
+.banking-tube {
+  height: 18vh;
+  bottom: -2%;
+  left: 40%;
+}
+.banking-monster {
+  height: 10vh;
+  bottom: 10%;
+  right: 5%;
+}
+.banking-text {
+  margin: 120px;
+}
+.banking-text > h1 {
+  color: #fff;
+}
+
+#boost-page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+.boost-img {
+  position: absolute;
+  height: 10px;
+}
+
+.boost-stairs-1 {
+  height: 120vh;
+  bottom: -20%;
+  right: -5%;
+}
+.boost-stairs-2 {
+  height: 70vh;
+  left: -5%;
+  bottom: -5%;
+}
+.boost-phone {
+  height: 60vh;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  top: 20%;
+  margin: auto;
+}
+.boost-burger {
+  height: 10vh;
+  bottom: 205px;
+  right: 365px;
+}
+.boost-shoe {
+  height: 10vh;
+  bottom: 205px;
+  right: 50px;
+}
+.boost-coffee {
+  height: 10vh;
+  bottom: 90px;
+  right: 280px;
+}
+.boost-card {
+  height: 15vh;
+  top: 180px;
+  right: 280px;
+}
+.boost-hand {
+  height: 10vh;
+  top: 80px;
+  right: 200px;
+}
+.boost-text {
+  margin: 120px;
+}
+.boost-text > h1 {
+  color: #00d54b;
+}
+.boost-text > p {
+  color: #fff;
+}
+
+#investing-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00d54b;
+  position: absolute;
+  background-image: url("src/hero-lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+#investing-page > .container {
+  z-index: 2;
+  position: relative;
+}
+.investing-title {
+  color: #fff;
+  text-align: center;
+  padding: 10vh 0;
+}
+.container-col {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-col-1,
+.container-col-2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.stock-phone,
+.bitcoin-phone {
+  width: 130px;
+  /*min-width: 100px;*/
+}
+.stocks-text > h1,
+.bitcoin-text > h1 {
+  font-size: 1.2rem;
+}
+
+.floor {
+  height: 45vh;
+  width: 100vw;
+  bottom: 0;
+  position: absolute;
+  background-color: #fff;
+  background-image: url("src/investing-floor.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.investing-img {
+  height: 10px;
+  position: absolute;
+}
+.investing-graph-1 {
+  height: 30vh;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.investing-graph-2 {
+  height: 40vh;
+  right: 0;
+  bottom: 30%;
+  z-index: 2;
+}
+.investing-graph-3 {
+  height: 30vh;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.footer {
+  margin: 10vh 0;
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer > div {
+  display: flex;
+}
+.footer-col-2 {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.legal {
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 40vw;
+}
+.social-icon {
+  display: flex;
+  height: 1.5rem;
+  margin: 0 0.8rem;
+}
+.appstore-btn,
+.playstore-btn {
+  border-color: #000;
+  border-radius: 8px;
+  height: 48px;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin: 5px;
+  border-width: 1.5px;
+}
+.appstore-btn > img,
+.playstore-btn > img {
+  height: 1.5rem;
+  margin: 10px;
+}
+.appstore-btn > p,
+.playstore-btn > p {
+  margin: 10px;
+}
