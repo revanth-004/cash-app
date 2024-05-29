@@ -744,6 +744,8 @@ body {
   }
   .social-icon-container {
     padding: 0 30vw;
+    margin: 5vh 0;
+    height: 1.2rem;
   }
 
   .investing-graph-1 {
