@@ -505,7 +505,7 @@ body {
   margin: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 512px) {
   .navbar {
     justify-content: space-between;
     height: 7vh;
