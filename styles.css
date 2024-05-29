@@ -25,17 +25,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  overflow-x: hidden;
 }
 .hero-img {
   position: absolute;
 }
 .hero-cube {
-  height: 4vw;
+  height: 10vh;
   top: 10%;
   left: 20%;
 }
 .hero-cubes {
-  height: 14vw;
+  height: 24vh;
   bottom: 10%;
   left: 12%;
 }
@@ -57,6 +58,10 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
+  position: fixed;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 .navbar-nav {
   list-style: none;
@@ -64,6 +69,38 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+.navbar-nav-mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: #00d54b;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: none;
+}
+.navbar-nav-mobile .navbar-eye-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.navbar-nav-mobile .navbar-eye {
+  height: 15px;
+}
+.navbar-nav-mobile a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+.navbar-nav-mobile a:hover {
+  color: #f1f1f1;
 }
 .nav-item {
   padding: 0 1rem;
@@ -76,8 +113,9 @@ body {
 }
 
 .navbar-eye-btn {
-  background-color: #000;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .landing-page {
@@ -115,6 +153,7 @@ body {
 
 #payment-page {
   height: 100vh;
+  width: 100vw;
   position: relative;
   overflow: hidden;
 }
@@ -280,7 +319,6 @@ body {
 }
 .boost-img {
   position: absolute;
-  height: 10px;
 }
 
 .boost-stairs-1 {
@@ -337,7 +375,7 @@ body {
 }
 
 #investing-page {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   background-color: #00d54b;
   position: absolute;
@@ -345,6 +383,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  overflow-x: hidden;
 }
 
 #investing-page > .container {
@@ -366,7 +405,9 @@ body {
   width: 50%;
   justify-content: space-evenly;
 }
-
+.stocks-text {
+  text-align: right;
+}
 .stock-phone,
 .bitcoin-phone {
   width: 130px;
@@ -433,9 +474,11 @@ body {
   font-weight: 500;
   width: 40vw;
 }
-.social-icon {
+.social-icon-container {
   display: flex;
   height: 1.5rem;
+}
+.social-icon {
   margin: 0 0.8rem;
 }
 .appstore-btn,
@@ -463,13 +506,254 @@ body {
 
 @media (max-width: 480px) {
   .navbar {
-    position: fixed;
     justify-content: space-between;
+    height: 7vh;
   }
   .navbar-nav {
     display: none;
   }
+  .navbar-nav-mobile {
+    display: block;
+  }
   .nav-img {
     margin: 20px;
+  }
+  .landing-title {
+    font-size: 120px;
+  }
+  .landing-phone {
+    height: 30vh;
+  }
+  .hero-cube {
+    height: 6vh;
+  }
+  .hero-cubes {
+    height: 12vh;
+    bottom: 5%;
+  }
+  .hero-pillar {
+    width: 30vw;
+    bottom: 0%;
+    right: 10%;
+  }
+  .hero-stairs {
+    width: 25vw;
+    right: 0%;
+  }
+
+  .payments-phone {
+    height: 30vh;
+    bottom: 0%;
+  }
+  .payment-text {
+    margin: 50px;
+  }
+  .text-container {
+    width: 80vw;
+  }
+  /*PAYMENT PILLARS*/
+
+  .pillar-1 {
+    height: 20vh;
+    bottom: 35%;
+    right: -2%;
+    z-index: -1;
+  }
+  .pillar-2 {
+    height: 25vh;
+    bottom: 0%;
+    right: 0%;
+  }
+  .pillar-3 {
+    display: none;
+  }
+
+  .payments-pillar-large {
+    height: 25vh;
+    bottom: 10%;
+    right: 39%;
+    z-index: -1;
+  }
+  .payments-pillar-medium {
+    height: 16vh;
+  }
+  .pillar-m-1 {
+    bottom: 20%;
+    left: 15%;
+  }
+  .pillar-m-2 {
+    display: none;
+  }
+  .pillar-m-3 {
+    bottom: 25%;
+    right: 15%;
+  }
+  .pillar-m-4 {
+    display: none;
+  }
+  .payments-pillar-small {
+    height: 5vh;
+    bottom: 15%;
+    left: 16%;
+  }
+  .banking-cubes {
+    display: none;
+  }
+  .banking-phone {
+    width: 40vw;
+    height: auto;
+    bottom: 40%;
+  }
+
+  .banking-stairs-1 {
+    height: 12vh;
+    top: 30%;
+    right: 4%;
+  }
+  .banking-stairs-2 {
+    height: 12vh;
+    top: 60%;
+    left: 4%;
+  }
+  .banking-track-1 {
+    display: none;
+  }
+  .banking-track-2 {
+    height: 10vh;
+  }
+  .banking-ramp-1 {
+    display: none;
+  }
+  .banking-ramp-2 {
+    width: 30vw;
+    height: auto;
+    bottom: 20%;
+    left: 40%;
+  }
+  .banking-hole-1 {
+    height: 8vh;
+  }
+  .banking-pillar {
+    height: 15vh;
+    top: 5%;
+    right: 20%;
+  }
+  .banking-text {
+    margin: 50px;
+  }
+  .banking-hole-2 {
+    height: 15vh;
+    bottom: -10%;
+    right: 20%;
+  }
+  .banking-tube {
+    height: 10vh;
+    bottom: 5%;
+    left: 10%;
+  }
+  .banking-monster {
+    height: 5vh;
+    bottom: 10%;
+    right: 5%;
+  }
+  .boost-stairs-2 {
+    display: none;
+  }
+  .boost-stairs-1 {
+    width: 510px;
+    height: auto;
+    bottom: -5%;
+  }
+  .boost-text {
+    margin: 50px;
+  }
+
+  .boost-phone {
+    height: 25vh;
+    left: -10%;
+  }
+  .boost-burger {
+    height: 5vh;
+    bottom: 160px;
+    right: 240px;
+  }
+  .boost-shoe {
+    height: 5vh;
+    bottom: 150px;
+    right: 50px;
+  }
+  .boost-coffee {
+    height: 5vh;
+    bottom: 90px;
+    right: 190px;
+  }
+  .boost-card {
+    height: 5vh;
+    top: 400px;
+    right: 20px;
+  }
+  .boost-hand {
+    height: 5vh;
+    top: 460px;
+    right: 140px;
+  }
+  .investing-title {
+    padding: 5vh;
+  }
+  .container-col-1 {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2%;
+  }
+
+  .container-col-2 {
+    flex-direction: column-reverse;
+    padding: 2%;
+  }
+  .stock-phone,
+  .bitcoin-phone {
+    width: 50%;
+  }
+  .stocks-text {
+    text-align: right;
+  }
+  .bitcoin-text,
+  .stocks-text {
+    width: 48vw;
+    font-size: 0.8rem;
+    padding: 10px 0;
+  }
+  .footer {
+    margin: 0;
+    display: block;
+  }
+  .floor {
+    height: 30vh;
+  }
+  .footer-col-1 {
+    width: 100vw;
+    padding: 6vh 0;
+    justify-content: space-evenly;
+  }
+  .footer-col-2 {
+    display: block !important;
+  }
+  .legal {
+    width: 90vw;
+    margin: 5vw;
+  }
+  .social-icon-container {
+    padding: 0 30vw;
+  }
+
+  .investing-graph-1 {
+    height: 10vh;
+  }
+  .investing-graph-2 {
+    height: 20vh;
+    bottom: 10%;
+  }
+  .investing-graph-3 {
+    height: 15vh;
   }
 }
