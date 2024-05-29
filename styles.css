@@ -357,12 +357,12 @@ body {
 }
 .boost-card {
   height: 15vh;
-  top: 180px;
+  bottom: 320px;
   right: 280px;
 }
 .boost-hand {
   height: 10vh;
-  top: 80px;
+  bottom: 450px;
   right: 200px;
 }
 .boost-text {
@@ -505,7 +505,7 @@ body {
   margin: 10px;
 }
 
-@media (max-width: 512px) {
+@media (max-width: 480px) {
   .navbar {
     justify-content: space-between;
     height: 7vh;
@@ -690,12 +690,12 @@ body {
   }
   .boost-card {
     height: 5vh;
-    top: 400px;
+    bottom:370px ;
     right: 20px;
   }
   .boost-hand {
     height: 5vh;
-    top: 460px;
+    bottom: 310px;
     right: 140px;
   }
   .investing-title {
