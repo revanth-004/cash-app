@@ -712,7 +712,7 @@ body {
   }
   .stock-phone,
   .bitcoin-phone {
-    width: 50%;
+    width: 60%;
   }
   .stocks-text {
     text-align: right;
@@ -732,7 +732,7 @@ body {
   }
   .footer-col-1 {
     width: 100vw;
-    padding: 6vh 0;
+    padding: 5vh 0;
     justify-content: space-evenly;
   }
   .footer-col-2 {
